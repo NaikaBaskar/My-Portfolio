@@ -1,0 +1,441 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h1.h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 40px;
+  overflow: hidden;
+  background-color:#5361FF;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.navbar .nav-right {
+  float: right;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+li a:hover {
+  background-color: white;
+  color: #5361FF;
+}
+
+/* .active {
+    color:  lightblue;
+    padding-bottom: 8px;
+    border-bottom-style: solid ;
+    border-bottom-width: 2px;
+    width: fit-content;
+    font-weight: 550;
+  } */
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 5px;
+        overflow: hidden;
+        background-color: #5361FF;
+        top: 0;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 12px 14px;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 300;
+      }
+
+ }
+
+
+
+/* Home   */
+header {
+  background:#5361FF;
+  color: #f7fff7;
+  text-align: center;
+}
+
+#home > .content-wrap > p {
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  #home > .content-wrap > p {
+    font-size: 15px;
+
+  }
+
+  #home > .content-wrap > h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* about ME   */
+.about-me {
+  background: #ffffff;
+  overflow: hidden;
+   font-family: monospace;
+}
+
+.about-me img {
+  width: 250px;
+  height: 250px;
+  /* border: 4px solid black; */
+  float: left;
+}
+
+.about-me p {
+  float: left;
+  font-size: 18px;
+   font-family: monospace;
+  /* margin: 30px; */
+}
+
+@media screen and (max-width: 600px) {
+    .about-me h2 {
+        /* float: left; */
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .about-me p {
+        float: left;
+        font-size: 16px;
+        /* margin: 30px; */
+      }
+      
+  .about-me img {
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+    /* border: 4px solid black; */
+  }
+}
+
+/* skills */
+.skills {
+  background: #008080;
+}
+
+.skill-item p {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.container {
+  background-color: lightgrey;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.skill {
+  background-color: rgb(116, 194, 92);
+  color: white;
+  padding: 0.01%;
+  text-align: right;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.html,
+.android,
+.java {
+  width: 80%;
+}
+
+.python {
+  width: 70%;
+}
+
+.mysql {
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+    .skills h2 {
+        /* float: left; */
+        font-size: 30px;
+        text-align: center;
+      }
+
+    .skill-item p{
+        font-size: 16px;
+    }
+}
+
+
+/* certifications */
+.certification {
+  background-color: #ffe66d;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 22%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+   .certification h2{
+       font-size: 30px;
+       text-align: center;
+   } 
+  .column {
+    width: 100%;
+  }
+}
+
+/* projects */
+/* .projects{
+    background: #FFE66D ;
+}
+
+.project-item {
+    overflow: hidden;
+  }
+  .project-item img {
+    float: left;
+    width: 150px;
+    height: 150px;
+  }
+  .project-item h2 {
+    margin-top: 0;
+  }
+
+  .project-item p{
+      float: left;
+      margin: 20px;
+  } */
+
+/* footer */
+
+footer {
+  background-color: #2A3B47;
+  color: white;
+}
+
+.fa {
+  padding: 5px;
+  color: orange;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  color: orange;
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  color: white;
+  margin-left: 350px;
+}
+
+.fa-whatsapp {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.box-wrapper {
+  height: 40vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#box {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+#box1,
+#box2,
+#box3 {
+  flex-grow: 1;
+  margin: 20px;
+  /* border: solid 1px orange;  */
+  /* color: white; */
+}
+
+.material-icons {
+  color: orange;
+}
+
+#box > #box1,
+#box2,
+#box3 > h3 {
+  text-align: center;
+}
+
+#box > #box1,
+#box2,
+#box3 > p {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .fa-linkedin {
+        margin-left: 250px;
+        color: white;
+      }
+    
+      #box3 > .material-icons{
+        margin-right: 10px;
+      }
+  }
+@media screen and (max-width: 600px) {
+    #contact h2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+  .fa {
+    padding: 2px;
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 5px 2px; */
+  }
+
+  .fa-linkedin {
+    font-size: 20px;
+    margin-left: 70px;
+    color: white;
+  }
+  .fa-whatsapp {
+    color: white;
+  }
+
+  .fa-instagram {
+    color: white;
+  }
+
+  .box-wrapper {
+    height: 120vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #box {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;  /*Ensures the content is not revealed until the animation */
+  border-right: 0 solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100%] }
+}
+
+/* The typewriter cursor effect */
+/*@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}*/
